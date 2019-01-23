@@ -4,6 +4,6 @@
 <div *ngFor="let p of properties; let i=index;">
   <div class="property">
     <p>{{i+1}}</p>
-    <p>{{p.name}}</p>
+    <a routerLink="/properties/view/{{p.name}}">{{p.name}}</a>
   </div>
 </div>

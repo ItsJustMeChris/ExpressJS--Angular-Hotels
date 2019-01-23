@@ -24,7 +24,7 @@ export class PropertiesService {
   constructor(private http: HttpClient) { }
 
   getAllProperties(): Observable<Property[]> {
-    const t = this.http.get<Property[]>('http://localhost:8000/api/v1/properties');
+    const t = this.http.get<Property[]>(endpoint + 'properties');
     console.log(t);
     return t;
   }

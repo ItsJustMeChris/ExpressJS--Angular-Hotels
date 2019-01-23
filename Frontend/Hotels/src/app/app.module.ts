@@ -9,6 +9,7 @@ import { PropertyComponent } from './property/property.component';
 
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { PropertyViewComponent } from './property-view/property-view.component';
 
 const appRoutes: Routes = [
   {
@@ -18,7 +19,7 @@ const appRoutes: Routes = [
   },
   {
     path: 'properties/view/:id',
-    component: PropertyComponent,
+    component: PropertyViewComponent,
     data: { title: 'Property' }
   },
   {
@@ -31,7 +32,8 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    PropertyComponent
+    PropertyComponent,
+    PropertyViewComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
